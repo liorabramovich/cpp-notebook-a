@@ -62,11 +62,11 @@ TEST_CASE("valid position") {
     
     Notebook notebook2;
     notebook2.write(0,0,0,Direction::Horizontal,"lior");
-    CHECK(notebook3.read(0,0,0,Direction::Horizontal,4)=="lior");
-    CHECK(notebook3.read(0,0,0,Direction::Horizontal,5)=="lior_");
-    CHECK(notebook3.read(0,0,1,Direction::Horizontal,3)=="ior");
-    CHECK(notebook3.read(0,0,1,Direction::Horizontal,5)=="_ior_");
-    CHECK(notebook3.read(2,2,2,Direction::Horizontal,4)=="____");
+    CHECK(notebook2.read(0,0,0,Direction::Horizontal,4)=="lior");
+    CHECK(notebook2.read(0,0,0,Direction::Horizontal,5)=="lior_");
+    CHECK(notebook2.read(0,0,1,Direction::Horizontal,3)=="ior");
+    CHECK(notebook2.read(0,0,1,Direction::Horizontal,5)=="_ior_");
+    CHECK(notebook2.read(2,2,2,Direction::Horizontal,4)=="____");
 
 
 
